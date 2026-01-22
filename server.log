@@ -194,3 +194,12 @@
 [Thu Jan 22 12:05:47 2026] [::1]:56950 [200]: GET /timetable_app/assets/js/main.js
 [Thu Jan 22 12:05:47 2026] [::1]:56948 Closing
 [Thu Jan 22 12:05:47 2026] [::1]:56950 Closing
+[Thu Jan 22 12:10:27 2026] [::1]:34330 Accepted
+[Thu Jan 22 12:10:27 2026] [::1]:34330 [200]: GET /index.php
+[Thu Jan 22 12:10:27 2026] [::1]:34330 Closing
+[Thu Jan 22 12:10:27 2026] [::1]:34334 Accepted
+[Thu Jan 22 12:10:27 2026] [::1]:34334 [404]: GET /assets/css/style.css - No such file or directory
+[Thu Jan 22 12:10:27 2026] [::1]:34334 Closing
+[Thu Jan 22 12:10:27 2026] [::1]:34338 Accepted
+[Thu Jan 22 12:10:27 2026] [::1]:34338 [404]: GET /timetable_app/assets/images/university.jpg - No such file or directory
+[Thu Jan 22 12:10:27 2026] [::1]:34338 Closing
