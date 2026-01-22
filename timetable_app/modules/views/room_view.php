@@ -54,7 +54,7 @@ require_once __DIR__ . '/../../includes/header.php';
                         if (isset($schedule[$s_id])) {
                             foreach ($schedule[$s_id] as $entry) {
                                 echo "<div class='slot-filled'>";
-                                echo "<span class='ue-code'>{$entry['course_code']}</span><br>";
+                                echo "<span class='ue-code'>{$entry['course_code']}</span> (" . ($entry['type'] ?? 'CM') . ")<br>";
                                 echo "{$entry['class_name']}<br>";
                                 echo "<span class='teacher'>{$entry['teacher_name']}</span>";
                                 echo "</div>";

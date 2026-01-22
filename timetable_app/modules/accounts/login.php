@@ -41,6 +41,7 @@ require_once __DIR__ . '/../../includes/header.php';
         </div>
         <button type="submit" class="btn btn-primary">Se connecter</button>
     </form>
+    <p>Pas encore de compte ? <a href="register.php">Inscrivez-vous ici</a>.</p>
 </div>
 
 <?php
