@@ -23,8 +23,37 @@ try {
 
 session_start();
 
+// Define base URL dynamically
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+$domainName = $_SERVER['HTTP_HOST'] ?? 'localhost';
+// Determine the app root directory relative to the document root
+// This file is in /timetable_app/includes/config.php
+$script_path = str_replace('\\', '/', $_SERVER['SCRIPT_NAME']);
+$app_root_index = strpos($script_path, '/modules/');
+if ($app_root_index === false) {
+    $app_root_index = strpos($script_path, '/index.php');
+}
+
+if ($app_root_index !== false) {
+    $base_dir = substr($script_path, 0, $app_root_index);
+} else {
+    // Fallback if we are not in modules or index (e.g. root index)
+    $base_dir = '/timetable_app';
+}
+
+$base_url = $protocol . $domainName . rtrim($base_dir, '/');
+
+define('BASE_URL', $base_url);
+
 // Basic helper functions
 function redirect($url) {
+    if (strpos($url, 'http') !== 0) {
+        if (strpos($url, '/') === 0) {
+            $url = BASE_URL . $url;
+        } else {
+            $url = BASE_URL . '/' . $url;
+        }
+    }
     header("Location: $url");
     exit();
 }

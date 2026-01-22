@@ -10,19 +10,19 @@ if (isset($_POST['add_teacher'])) {
 
     $stmt = $pdo->prepare("INSERT INTO teachers (user_id, name, email, department_id) VALUES (?, ?, ?, ?)");
     $stmt->execute([$user_id, $_POST['name'], $_POST['email'], $_POST['department_id']]);
-    redirect('manage.php');
+    redirect('/modules/teachers/manage.php');
 }
 
 if (isset($_POST['add_course'])) {
     $stmt = $pdo->prepare("INSERT INTO courses (code, title, program_id) VALUES (?, ?, ?)");
     $stmt->execute([$_POST['code'], $_POST['title'], $_POST['program_id']]);
-    redirect('manage.php');
+    redirect('/modules/teachers/manage.php');
 }
 
 if (isset($_POST['assign_course'])) {
     $stmt = $pdo->prepare("INSERT INTO teacher_courses (teacher_id, course_id, class_id) VALUES (?, ?, ?)");
     $stmt->execute([$_POST['teacher_id'], $_POST['course_id'], $_POST['class_id']]);
-    redirect('manage.php');
+    redirect('/modules/teachers/manage.php');
 }
 
 $teachers = $pdo->query("SELECT * FROM teachers")->fetchAll();

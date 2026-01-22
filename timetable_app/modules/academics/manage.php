@@ -7,7 +7,7 @@ $action = $_GET['action'] ?? 'list';
 if ($action === 'add_class' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare("INSERT INTO classes (name, program_id, size, semester_id) VALUES (?, ?, ?, ?)");
     $stmt->execute([$_POST['name'], $_POST['program_id'], $_POST['size'], $_POST['semester_id']]);
-    redirect('manage.php');
+    redirect('/modules/academics/manage.php');
 }
 
 // Simple CRUD for Departments, Programs, Classes for the demo

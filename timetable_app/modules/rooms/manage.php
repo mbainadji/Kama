@@ -5,7 +5,7 @@ requireRole('admin');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare("INSERT INTO rooms (name, capacity, is_predefined) VALUES (?, ?, ?)");
     $stmt->execute([$_POST['name'], $_POST['capacity'], $_POST['is_predefined'] ?? 0]);
-    redirect('manage.php');
+    redirect('/modules/rooms/manage.php');
 }
 
 $rooms = $pdo->query("SELECT * FROM rooms")->fetchAll();
