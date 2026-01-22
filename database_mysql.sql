@@ -1,114 +1,113 @@
 
--- Database schema for University Timetable Management System
+-- MySQL version of the database schema
 
 CREATE TABLE users (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    username TEXT UNIQUE NOT NULL,
-    password TEXT NOT NULL,
-    role TEXT NOT NULL, -- 'admin', 'teacher', 'student'
-    full_name TEXT
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    role VARCHAR(20) NOT NULL,
+    full_name VARCHAR(100)
 );
 
 CREATE TABLE academic_years (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    name TEXT NOT NULL -- e.g., '2025/2026'
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE semesters (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    academic_year_id INTEGER,
-    name TEXT NOT NULL, -- 'Semestre 1', 'Semestre 2'
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    academic_year_id INT,
+    name VARCHAR(50) NOT NULL,
     FOREIGN KEY(academic_year_id) REFERENCES academic_years(id)
 );
 
 CREATE TABLE departments (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    name TEXT NOT NULL
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE programs (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    department_id INTEGER,
-    name TEXT NOT NULL, -- 'ICT4D', etc.
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    department_id INT,
+    name VARCHAR(100) NOT NULL,
     FOREIGN KEY(department_id) REFERENCES departments(id)
 );
 
 CREATE TABLE classes (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    program_id INTEGER,
-    name TEXT NOT NULL, -- 'ICT-L2'
-    size INTEGER,
-    semester_id INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    program_id INT,
+    name VARCHAR(50) NOT NULL,
+    size INT,
+    semester_id INT,
     FOREIGN KEY(program_id) REFERENCES programs(id),
     FOREIGN KEY(semester_id) REFERENCES semesters(id)
 );
 
 CREATE TABLE teachers (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    user_id INTEGER,
-    name TEXT NOT NULL,
-    email TEXT,
-    department_id INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(100),
+    department_id INT,
     FOREIGN KEY(user_id) REFERENCES users(id),
     FOREIGN KEY(department_id) REFERENCES departments(id)
 );
 
 CREATE TABLE courses (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    code TEXT NOT NULL,
-    title TEXT NOT NULL,
-    program_id INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    code VARCHAR(20) NOT NULL,
+    title VARCHAR(200) NOT NULL,
+    program_id INT,
     FOREIGN KEY(program_id) REFERENCES programs(id)
 );
 
--- Mapping teacher to UE and class
 CREATE TABLE teacher_courses (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    teacher_id INTEGER,
-    course_id INTEGER,
-    class_id INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    teacher_id INT,
+    course_id INT,
+    class_id INT,
     FOREIGN KEY(teacher_id) REFERENCES teachers(id),
     FOREIGN KEY(course_id) REFERENCES courses(id),
     FOREIGN KEY(class_id) REFERENCES classes(id)
 );
 
 CREATE TABLE rooms (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    name TEXT NOT NULL,
-    capacity INTEGER NOT NULL,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL,
+    capacity INT NOT NULL,
     is_predefined TINYINT(1) DEFAULT 1
 );
 
 CREATE TABLE slots (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    day TEXT NOT NULL, -- 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'
-    start_time TEXT NOT NULL, -- '08:00'
-    end_time TEXT NOT NULL    -- '11:00'
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    day VARCHAR(20) NOT NULL,
+    start_time VARCHAR(10) NOT NULL,
+    end_time VARCHAR(10) NOT NULL
 );
 
 CREATE TABLE desiderata (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    teacher_id INTEGER,
-    slot_id INTEGER,
-    semester_id INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    teacher_id INT,
+    slot_id INT,
+    semester_id INT,
     is_preferred TINYINT(1) DEFAULT 1,
-    status TEXT DEFAULT 'submitted', -- 'submitted', 'modified_by_admin'
+    status VARCHAR(20) DEFAULT 'submitted',
     FOREIGN KEY(teacher_id) REFERENCES teachers(id),
     FOREIGN KEY(slot_id) REFERENCES slots(id),
     FOREIGN KEY(semester_id) REFERENCES semesters(id)
 );
 
 CREATE TABLE timetable (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    class_id INTEGER,
-    course_id INTEGER,
-    teacher_id INTEGER,
-    room_id INTEGER,
-    slot_id INTEGER,
-    semester_id INTEGER,
-    week_number INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    class_id INT,
+    course_id INT,
+    teacher_id INT,
+    room_id INT,
+    slot_id INT,
+    semester_id INT,
+    week_number INT,
     date_passage DATE,
-    group_name TEXT, -- 'G1', 'G2'
+    group_name VARCHAR(10),
     FOREIGN KEY(class_id) REFERENCES classes(id),
     FOREIGN KEY(course_id) REFERENCES courses(id),
     FOREIGN KEY(teacher_id) REFERENCES teachers(id),
@@ -118,11 +117,11 @@ CREATE TABLE timetable (
 );
 
 CREATE TABLE history (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    user_id INTEGER,
-    action TEXT, -- 'CREATE', 'UPDATE', 'DELETE'
-    table_name TEXT,
-    record_id INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
+    action VARCHAR(50),
+    table_name VARCHAR(50),
+    record_id INT,
     old_value TEXT,
     new_value TEXT,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -130,8 +129,8 @@ CREATE TABLE history (
 );
 
 CREATE TABLE notifications (
-    id INTEGER PRIMARY KEY AUTO_INCREMENT,
-    user_id INTEGER,
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT,
     message TEXT,
     is_read TINYINT(1) DEFAULT 0,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
@@ -139,7 +138,7 @@ CREATE TABLE notifications (
 );
 
 CREATE TABLE settings (
-    key TEXT PRIMARY KEY,
+    `key` VARCHAR(50) PRIMARY KEY,
     value TEXT
 );
 

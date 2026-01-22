@@ -1,0 +1,49 @@
+[Thu Jan 22 10:53:20 2026] PHP 8.3.6 Development Server (http://localhost:8000) started
+[Thu Jan 22 10:53:23 2026] [::1]:53072 Accepted
+[Thu Jan 22 10:53:23 2026] [::1]:53072 [200]: GET /timetable_app/modules/accounts/login.php
+[Thu Jan 22 10:53:23 2026] [::1]:53072 Closing
+[Thu Jan 22 10:54:17 2026] [::1]:55108 Accepted
+[Thu Jan 22 10:54:17 2026] [::1]:55108 [200]: GET /timetable_app/modules/accounts/login.php
+[Thu Jan 22 10:54:17 2026] [::1]:55108 Closing
+[Thu Jan 22 10:54:40 2026] [::1]:50980 Accepted
+[Thu Jan 22 10:54:40 2026] [::1]:50980 [200]: GET /timetable_app/modules/accounts/login.php
+[Thu Jan 22 10:54:40 2026] [::1]:50980 Closing
+[Thu Jan 22 10:55:11 2026] [::1]:36958 Accepted
+[Thu Jan 22 10:55:11 2026] [::1]:36958 [200]: GET /timetable_app/modules/accounts/login.php
+[Thu Jan 22 10:55:11 2026] [::1]:36958 Closing
+[Thu Jan 22 10:55:11 2026] [::1]:36974 Accepted
+[Thu Jan 22 10:55:11 2026] [::1]:36990 Accepted
+[Thu Jan 22 10:55:11 2026] [::1]:36974 [200]: GET /timetable_app/assets/css/style.css
+[Thu Jan 22 10:55:11 2026] [::1]:36990 [404]: GET /timetable_app/assets/js/main.js - No such file or directory
+[Thu Jan 22 10:55:11 2026] [::1]:36974 Closing
+[Thu Jan 22 10:55:11 2026] [::1]:36990 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37000 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37000 [302]: POST /timetable_app/modules/accounts/login.php
+[Thu Jan 22 10:55:12 2026] [::1]:37000 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37008 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37008 [200]: GET /timetable_app/index.php
+[Thu Jan 22 10:55:12 2026] [::1]:37008 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37022 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37036 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37022 [200]: GET /timetable_app/assets/css/style.css
+[Thu Jan 22 10:55:12 2026] [::1]:37036 [404]: GET /timetable_app/assets/js/main.js - No such file or directory
+[Thu Jan 22 10:55:12 2026] [::1]:37036 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37022 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37042 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37042 [200]: GET /timetable_app/modules/views/view.php
+[Thu Jan 22 10:55:12 2026] [::1]:37042 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37044 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37058 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37044 [200]: GET /timetable_app/assets/css/style.css
+[Thu Jan 22 10:55:12 2026] [::1]:37058 [404]: GET /timetable_app/assets/js/main.js - No such file or directory
+[Thu Jan 22 10:55:12 2026] [::1]:37044 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37058 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37068 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37068 [200]: GET /timetable_app/modules/views/view.php?class_id=1
+[Thu Jan 22 10:55:12 2026] [::1]:37068 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37076 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37080 Accepted
+[Thu Jan 22 10:55:12 2026] [::1]:37076 [200]: GET /timetable_app/assets/css/style.css
+[Thu Jan 22 10:55:12 2026] [::1]:37080 [404]: GET /timetable_app/assets/js/main.js - No such file or directory
+[Thu Jan 22 10:55:12 2026] [::1]:37080 Closing
+[Thu Jan 22 10:55:12 2026] [::1]:37076 Closing
