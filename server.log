@@ -203,3 +203,138 @@
 [Thu Jan 22 12:10:27 2026] [::1]:34338 Accepted
 [Thu Jan 22 12:10:27 2026] [::1]:34338 [404]: GET /timetable_app/assets/images/university.jpg - No such file or directory
 [Thu Jan 22 12:10:27 2026] [::1]:34338 Closing
+[Fri Jan 23 09:48:06 2026] [::1]:44212 Accepted
+[Fri Jan 23 09:48:06 2026] [::1]:44212 [200]: GET /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:48:06 2026] [::1]:44212 Closing
+[Fri Jan 23 09:48:06 2026] [::1]:44214 Accepted
+[Fri Jan 23 09:48:06 2026] [::1]:44228 Accepted
+[Fri Jan 23 09:48:06 2026] [::1]:44214 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:48:06 2026] [::1]:44228 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:48:06 2026] [::1]:44214 Closing
+[Fri Jan 23 09:48:06 2026] [::1]:44228 Closing
+[Fri Jan 23 09:48:06 2026] [::1]:44244 Accepted
+[Fri Jan 23 09:48:06 2026] [::1]:44244 [200]: POST /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:48:06 2026] [::1]:44244 Closing
+[Fri Jan 23 09:48:06 2026] [::1]:44254 Accepted
+[Fri Jan 23 09:48:06 2026] [::1]:44264 Accepted
+[Fri Jan 23 09:48:06 2026] [::1]:44254 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:48:06 2026] [::1]:44264 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:48:06 2026] [::1]:44254 Closing
+[Fri Jan 23 09:48:06 2026] [::1]:44264 Closing
+[Fri Jan 23 09:48:41 2026] [::1]:34758 Accepted
+[Fri Jan 23 09:48:41 2026] [::1]:34758 [200]: GET /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:48:41 2026] [::1]:34758 Closing
+[Fri Jan 23 09:48:41 2026] [::1]:34768 Accepted
+[Fri Jan 23 09:48:41 2026] [::1]:34782 Accepted
+[Fri Jan 23 09:48:41 2026] [::1]:34768 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:48:41 2026] [::1]:34782 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:48:41 2026] [::1]:34768 Closing
+[Fri Jan 23 09:48:41 2026] [::1]:34782 Closing
+[Fri Jan 23 09:48:41 2026] [::1]:34794 Accepted
+[Fri Jan 23 09:48:41 2026] [::1]:34794 [302]: POST /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:48:41 2026] [::1]:34794 Closing
+[Fri Jan 23 09:48:41 2026] [::1]:34804 Accepted
+[Fri Jan 23 09:48:41 2026] [::1]:34804 [200]: GET /timetable_app/index.php
+[Fri Jan 23 09:48:41 2026] [::1]:34804 Closing
+[Fri Jan 23 09:48:41 2026] [::1]:34814 Accepted
+[Fri Jan 23 09:48:41 2026] [::1]:34820 Accepted
+[Fri Jan 23 09:48:41 2026] [::1]:34814 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:48:41 2026] [::1]:34820 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:48:41 2026] [::1]:34814 Closing
+[Fri Jan 23 09:48:41 2026] [::1]:34820 Closing
+[Fri Jan 23 09:48:42 2026] [::1]:34830 Accepted
+[Fri Jan 23 09:48:42 2026] [::1]:34830 [200]: GET /timetable_app/modules/views/view.php
+[Fri Jan 23 09:48:42 2026] [::1]:34830 Closing
+[Fri Jan 23 09:48:42 2026] [::1]:34840 Accepted
+[Fri Jan 23 09:48:42 2026] [::1]:34844 Accepted
+[Fri Jan 23 09:48:42 2026] [::1]:34840 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:48:42 2026] [::1]:34844 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:48:42 2026] [::1]:34840 Closing
+[Fri Jan 23 09:48:42 2026] [::1]:34844 Closing
+[Fri Jan 23 09:48:42 2026] [::1]:34860 Accepted
+[Fri Jan 23 09:48:42 2026] [::1]:34860 [200]: GET /timetable_app/modules/views/view.php?class_id=1
+[Fri Jan 23 09:48:42 2026] [::1]:34860 Closing
+[Fri Jan 23 09:48:42 2026] [::1]:34862 Accepted
+[Fri Jan 23 09:48:42 2026] [::1]:34862 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:48:42 2026] [::1]:34862 Closing
+[Fri Jan 23 09:48:42 2026] [::1]:34878 Accepted
+[Fri Jan 23 09:48:42 2026] [::1]:34878 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:48:42 2026] [::1]:34878 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42286 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42286 [200]: GET /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:49:03 2026] [::1]:42286 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42300 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42306 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42300 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:03 2026] [::1]:42306 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:03 2026] [::1]:42300 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42306 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42320 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42320 [302]: POST /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:49:03 2026] [::1]:42320 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42336 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42336 [200]: GET /timetable_app/index.php
+[Fri Jan 23 09:49:03 2026] [::1]:42336 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42342 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42354 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42342 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:03 2026] [::1]:42342 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42354 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:03 2026] [::1]:42354 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42366 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42366 [200]: GET /timetable_app/modules/views/view.php
+[Fri Jan 23 09:49:03 2026] [::1]:42366 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42378 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42394 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42378 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:03 2026] [::1]:42394 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:03 2026] [::1]:42378 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42394 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42406 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42406 [200]: GET /timetable_app/modules/views/view.php?class_id=1
+[Fri Jan 23 09:49:03 2026] [::1]:42406 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42414 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42414 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:03 2026] [::1]:42414 Closing
+[Fri Jan 23 09:49:03 2026] [::1]:42426 Accepted
+[Fri Jan 23 09:49:03 2026] [::1]:42426 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:03 2026] [::1]:42426 Closing
+[Fri Jan 23 09:49:28 2026] [::1]:54702 Accepted
+[Fri Jan 23 09:49:28 2026] [::1]:54702 [200]: GET /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:49:28 2026] [::1]:54702 Closing
+[Fri Jan 23 09:49:28 2026] [::1]:54718 Accepted
+[Fri Jan 23 09:49:28 2026] [::1]:54734 Accepted
+[Fri Jan 23 09:49:28 2026] [::1]:54718 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:28 2026] [::1]:54734 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:28 2026] [::1]:54718 Closing
+[Fri Jan 23 09:49:28 2026] [::1]:54734 Closing
+[Fri Jan 23 09:49:28 2026] [::1]:54742 Accepted
+[Fri Jan 23 09:49:28 2026] [::1]:54742 [302]: POST /timetable_app/modules/accounts/login.php
+[Fri Jan 23 09:49:28 2026] [::1]:54742 Closing
+[Fri Jan 23 09:49:28 2026] [::1]:54746 Accepted
+[Fri Jan 23 09:49:28 2026] [::1]:54746 [200]: GET /timetable_app/index.php
+[Fri Jan 23 09:49:28 2026] [::1]:54746 Closing
+[Fri Jan 23 09:49:28 2026] [::1]:54762 Accepted
+[Fri Jan 23 09:49:28 2026] [::1]:54770 Accepted
+[Fri Jan 23 09:49:28 2026] [::1]:54762 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:28 2026] [::1]:54770 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:28 2026] [::1]:54762 Closing
+[Fri Jan 23 09:49:28 2026] [::1]:54770 Closing
+[Fri Jan 23 09:49:29 2026] [::1]:54778 Accepted
+[Fri Jan 23 09:49:29 2026] [::1]:54778 [200]: GET /timetable_app/modules/views/view.php
+[Fri Jan 23 09:49:29 2026] [::1]:54778 Closing
+[Fri Jan 23 09:49:29 2026] [::1]:54792 Accepted
+[Fri Jan 23 09:49:29 2026] [::1]:54794 Accepted
+[Fri Jan 23 09:49:29 2026] [::1]:54792 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:29 2026] [::1]:54792 Closing
+[Fri Jan 23 09:49:29 2026] [::1]:54794 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:29 2026] [::1]:54794 Closing
+[Fri Jan 23 09:49:29 2026] [::1]:54798 Accepted
+[Fri Jan 23 09:49:29 2026] [::1]:54798 [200]: GET /timetable_app/modules/views/view.php?class_id=1
+[Fri Jan 23 09:49:29 2026] [::1]:54798 Closing
+[Fri Jan 23 09:49:29 2026] [::1]:54806 Accepted
+[Fri Jan 23 09:49:29 2026] [::1]:54806 [200]: GET /timetable_app/assets/css/style.css
+[Fri Jan 23 09:49:29 2026] [::1]:54806 Closing
+[Fri Jan 23 09:49:29 2026] [::1]:54820 Accepted
+[Fri Jan 23 09:49:29 2026] [::1]:54820 [200]: GET /timetable_app/assets/js/main.js
+[Fri Jan 23 09:49:29 2026] [::1]:54820 Closing

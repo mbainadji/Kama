@@ -36,12 +36,35 @@ require_once __DIR__ . '/../../includes/header.php';
 </div>
 
 <?php if ($class_id): ?>
-<div class="card">
-    <h3>Emploi du Temps : <?php
-        $stmt = $pdo->prepare("SELECT name FROM classes WHERE id = ?");
-        $stmt->execute([$class_id]);
-        echo $stmt->fetchColumn();
-    ?></h3>
+<div class="card" id="printableTable">
+    <div style="text-align: center; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="text-align: left; font-size: 0.8rem;">
+                <strong>RÉPUBLIQUE DU CAMEROUN</strong><br>
+                Paix – Travail – Patrie<br><br>
+                <strong>UNIVERSITÉ DE YAOUNDÉ I</strong><br>
+                Faculté des Sciences<br>
+                Département d’Informatique<br>
+                B.P. 812 Yaoundé
+            </div>
+            <div style="text-align: right; font-size: 0.8rem;">
+                <strong>REPUBLIC OF CAMEROON</strong><br>
+                Peace – Work – Fatherland<br><br>
+                <strong>UNIVERSITY OF YAOUNDE I</strong><br>
+                Faculty of Science<br>
+                Department of Computer Science<br>
+                P.O.Box 812 Yaounde
+            </div>
+        </div>
+        <hr>
+        <h2>EMPLOI DU TEMPS</h2>
+        <h3>SEMESTRE 1 – ANNÉE ACADÉMIQUE 2025–2026</h3>
+        <p><strong>CLASSE : <?php
+            $stmt = $pdo->prepare("SELECT name FROM classes WHERE id = ?");
+            $stmt->execute([$class_id]);
+            echo $stmt->fetchColumn();
+        ?></strong></p>
+    </div>
 
     <div class="timetable-grid">
         <div class="grid-header">Horaire</div>
@@ -71,6 +94,17 @@ require_once __DIR__ . '/../../includes/header.php';
                 </div>
             <?php endforeach; ?>
         <?php endforeach; ?>
+    </div>
+
+    <div style="margin-top: 50px; text-align: right;">
+        <p>Fait à Yaoundé, le <?php echo date('d F Y'); ?></p>
+        <br><br>
+        <p><strong>LE DOYEN / THE DEAN</strong></p>
+        <p>Pr. Luc C. Etono Etomo</p>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <button onclick="window.print()" class="btn btn-primary">Imprimer l'emploi du temps</button>
     </div>
 </div>
 <?php endif; ?>

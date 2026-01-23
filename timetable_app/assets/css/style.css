@@ -22,8 +22,8 @@ label { display: block; margin-bottom: 5px; font-weight: bold; }
 input[type="text"], input[type="password"], input[type="number"], select { width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
 
 .timetable-grid { display: grid; grid-template-columns: 100px repeat(6, 1fr); gap: 1px; background: #ddd; border: 1px solid #ddd; }
-.timetable-grid div { background: white; padding: 10px; min-height: 80px; }
-.grid-header { font-weight: bold; background: #f8f9fa !important; text-align: center; }
+.timetable-grid div { background: white; padding: 10px; min-height: 80px; display: flex; flex-direction: column; gap: 5px; }
+.grid-header { font-weight: bold; background: #f8f9fa !important; text-align: center; justify-content: center; }
 .slot-filled { background: #e8f4fd !important; font-size: 0.85rem; }
 .slot-filled .ue-code { font-weight: bold; color: #2c3e50; }
 .slot-filled .teacher { font-style: italic; color: #7f8c8d; }
